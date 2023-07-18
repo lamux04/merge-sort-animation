@@ -1,0 +1,154 @@
+@use 'sass:math';
+
+@import 'variables';
+@import 'themes';
+@import 'aside';
+
+body {
+    background-color: var(--background-color);
+    color: var(--first-color);
+    font-family: $fontFamily;
+}
+
+// Encabezado
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid var(--first-color);
+
+    .menu-button,
+    .change-theme {
+        width: 100px;
+        font-size: 30px;
+        transition: color .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--second-color);
+            transition: color .3s;
+        }
+    }
+
+    h1 {
+        width: calc(100% - 100px);
+        font-size: 48px;
+    }
+}
+
+// Merge Sort
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 110px);
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    width: auto;
+
+    .line {
+        display: flex;
+        gap: 70px;
+    }
+
+    // #line-1 {
+    //     position: absolute;
+    //     top: 120px;
+    //     left: 500px;
+    // }
+
+    // #line-2 {
+    //     position: absolute;
+    //     top: 210px;
+    //     left: 465px;
+    //     display: flex;
+    // }
+
+    // #line-3 {
+    //     position: absolute;
+    //     top: 300px; // +90px que el anterior
+    //     left: 430px; // -35px que el anterior
+    // }
+
+    // #line-4 {
+    //     position: absolute;
+    //     top: 390px; // +90px que el anterior
+    //     left: 395px; // -60px que el anterior
+    // }
+
+
+
+    .container {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+
+        div {
+            background-color: var(--second-color);
+            color: var(--background-color);
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            font-size: 28px;
+        }
+    }
+}
+
+
+// Button design
+.button {
+    font-family: $fontFamily;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--first-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    transition: background-color .5s, color .5s;
+    width: 165px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--background-color);
+        color: var(--first-color);
+        transition: background-color .5s, color .5s;
+        outline: 1px solid var(--first-color);
+    }
+}
+
+// Input text design
+.input {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: $fontFamily;
+    outline: none;
+    transition: background-color .5s, color .5s;
+    border-radius: 10px;
+
+    &:focus {
+        background-color: inherit;
+        color: inherit;
+        outline: 1px solid var(--second-color);
+        transition: background-color .5s, color .5s;
+    }
+}
+
+// Buttons
+.buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light">
+    <aside class="aside" style="display: none;">
+        <header>
+            <h2>Animations</h2>
+            <i class="fa-solid fa-xmark close"></i>
+        </header>
+        <form class="speed-menu">
+            <label for="speed-animation">Speed Animation</label>
+            <input type="number" id="speed-animation" class="input">
+            <input type="submit" value="Save" class="button">
+            <p class="warning"></p>
+        </form>
+    </aside>
+    <header>
+        <i class="fa-solid fa-bars menu-button"></i>
+        <h1>Merge Sort Visualization</h1>
+        <i class="fa-solid fa-circle-half-stroke change-theme"></i>
+    </header>
+    <main>
+        <div class="box-container">
+            <div class="container">
+                <div class="box">3</div>
+                <div class="box">5</div>
+                <div class="box">9</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">-2</div>
+                <div class="box">1</div>
+                <div class="box">0</div>
+                <div class="box">-13</div>
+            </div>
+            <!-- <div id="line-2" class="line">
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                </div>
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                </div>
+            </div>
+            <div id="line-3" class="line">
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                </div>
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                </div>
+            </div>
+            <div id="line-4" class="line">
+                <div class="container">
+                    <div class="box">1</div>
+                </div>
+                <div class="container">
+                    <div class="box">1</div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="buttons-container">
+            <input type="button" value="Sort" id="bSort" class="sort-button button">
+            <input type="button" value="Unsort" id="bUnsort" class="sort-button button">
+            <input type="button" value="Change Numbers" id="changeNumbers" class="change-numbers button">
+        </div>
+    </main>
+
+    <script src="js/animations.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

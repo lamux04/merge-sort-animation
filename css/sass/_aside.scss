@@ -1,0 +1,56 @@
+// Aside
+.aside {
+    background-color: var(--first-color);
+    color: var(--background-color);
+
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+
+    header {
+        font-size: 36px;
+        text-align: center;
+        padding: 20px 30px;
+        border-bottom: 2px solid var(--first-color);
+    }
+
+    .close {
+        transition: color .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: #a23939;
+            transition: color .3s;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 80%;
+        margin: 50px auto;
+        
+        label {
+            font-size: 20px;
+        }
+    }
+
+    .button {
+        background-color: var(--second-color);
+        color: var(--first-color);
+        align-self: center;
+
+        &:hover {
+            background-color: var(--first-color);
+            color: var(--second-color);
+            outline: 1px solid var(--second-color);
+        }
+    }
+
+    .warning {
+        color: red;
+        font-size: 24px;
+        text-align: center;
+    }
+}

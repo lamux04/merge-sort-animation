@@ -1,0 +1,14 @@
+// Tema oscuro y claro
+@mixin theme($backgroundColor, $firstColor, $secondColor) {
+    --background-color: #{$backgroundColor};
+    --first-color: #{$firstColor};
+    --second-color: #{$secondColor};
+}
+
+.dark {
+    @include theme($backgroundColor: $darkBackgroundColor, $firstColor: $darkFirstColor, $secondColor: $darkSecondColor);
+}
+
+.light {
+    @include theme($backgroundColor: $lightBackgroundColor, $firstColor: $lightFirstColor, $secondColor: $lightSecondColor);
+}
